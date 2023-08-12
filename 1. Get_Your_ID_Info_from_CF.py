@@ -18,21 +18,21 @@ headers = {
     "Content-Type": "application/json"
 }
 
-# 使用代理发起请求
+# send out the request to CF
 response = requests.get(CLOUDFLARE_API_ENDPOINT, headers=headers)
 #if you use a proxy to connect cloudflare pls use below code
 #response = requests.get(CLOUDFLARE_API_ENDPOINT, headers=headers, proxies=proxies)
 
-# 解析并打印响应内容
+# print the content
 response_data = response.json()
 
-# 检查是否成功获取数据
+# check if get the content
 if response_data['success']:
     results = response_data['result']
     for idx, result in enumerate(results, 1):
         print(f"Record {idx}:")
         for key, value in result.items():
             print(f"  {key}: {value}")
-        print('-' * 40)  # 打印分隔线
+        print('-' * 40)  # seperated line
 else:
     print("Failed to retrieve data.")
