@@ -7,7 +7,7 @@ import requests
     #"https": "socks5h://127.0.0.1:6152"
 #}
 
-# Cloudflare 认证信息
+# Cloudflare verification info
 CLOUDFLARE_API_ENDPOINT = "https://api.cloudflare.com/client/v4/zones/YOUR_ZONE_ID/dns_records"
 CLOUDFLARE_API_KEY = "Your API key in Cloudflare"
 CLOUDFLARE_EMAIL = "Your email address login into Cloudflare"
