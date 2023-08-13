@@ -5,10 +5,10 @@ This is a local DDNS service written by myself.
 
 It's very easy to use, run my code from 1 to 2.
 
-STEP 1: GET THE CRITICAL INFO FROM YOUR CLOUDFLARE, and save it.
+STEP 1: Get your id info from CLOUDFLARE, and save it.
 
 STEP 2: Fill the info you get from STEP 1, and replace on it.
 
-STEP 3: Step the STEP 2 python program as the task scheduler(Windows) or Crontab in Mac.
+STEP 3: Make the STEP 2 python program as the task scheduler(Windows) or Crontab in Mac.
 
 Done
