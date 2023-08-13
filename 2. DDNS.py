@@ -1,5 +1,5 @@
 #if you successfully get your info from Cloudflare from Step 1, you can go ahead into Step 2.
-#This python code is to get your current IP address and then get cloudflare to update DNS address via API.
+#This python code is to get your current IP address and then get cloudflare to update DNS address via API if there's a change.
 import requests
 import os
 
